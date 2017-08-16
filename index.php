@@ -8,11 +8,12 @@
     <meta name="viewport" content="initial-scale=1.0"> </head>
 
 <body>
-    <nav>
-        <a href="#"> <i class="fa fa-sign-in fa-1x" aria-hidden="true"></i> Login</a>
+   <header>
+        <a href="#"> <i class="fa fa-sign-in fa-1x" aria-hidden="true" ></i> Login</a>
         <a href="#"> <i class="fa fa-user-plus" aria-hidden="true"></i> Join_Us</a>
         <a href="#"> <i class="fa fa-phone" aria-hidden="true"></i> 9815359690</a>
-    </nav>
+</header>
+
     <div id="container">
         <form action="">
             <center><img src="img/logo.png" class="img-responsive" alt="search"> </center>
