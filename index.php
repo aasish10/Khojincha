@@ -8,8 +8,22 @@
 	</head>
 
 	<body>
+	<header>
+	    h
+	</header>
+	
 
+
+	
+	
+	
+<footer>
+    f
+</footer>
 	</body>
+	<script src="js/npm.js">
+    
+    </script>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
