@@ -9,3 +9,7 @@ html {
     background-repeat: no-repeat;
     /*background-size: cover;*/
 }
+section{
+    margin-top:10%;
+    display: inline;
+}
