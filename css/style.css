@@ -1,8 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Russo+One|Play|Orbitron:500,400,700);
-body{
-	font-size: 12px;
-	background : #000000 url("main.jpg") no-repeat fixed center;
-	background-position: top;
-	background-size: 100% auto;
-	font-family: 'Orbitron', sans-serif;
+body,
+html {
+    height: 100%;
+    margin: 0;
+    /* The image used */
+    background-image: url("main.jpg");
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
 }
