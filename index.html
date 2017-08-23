@@ -1,61 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
 
-<head>
-    <title>Local Search Engine</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> </head>
+.bgimg {
+    background-image: url('css/main.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
 
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+</style>
 <body>
-    <header>
-        <ul class="nav justify-content">
-            <li class="nav-item">
-                <a class="nav-link active" style="color:white" href="#"> <i class="fa fa-home" aria-hidden="true"></i> HOME</a>
-            </li>
-        </ul>
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link active" style="color:white" href="#"> <i class="fa fa-sign-in" aria-hidden="true"></i> LOGIN</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" style="color:white" href="#"> <i class="fa fa-user-plus" aria-hidden="true"></i> JOIN US</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" style="color:white" href="#"> <i class="fa fa-phone-square" aria-hidden="true"></i> 9816359690</a>
-        </ul>
-    </header>
-     <div class="text-center ">
-  <img src="img/logo.png" class="rounded" alt="...">
-</div>
-    <section>
-     
-       <div class="row">
-                <div class="col-lg-4">
-                    <div class="input-group ">
-                        <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Item"> </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="input-group">
-                        <input type="text" class="form-control" aria-label="Text input with radio button" placeholder='place'>
-                         <a class="btn btn-primary" href="#" role="button"> <i class="fa fa-search" aria-hidden="true"></i> </a>
-                         
-                           </div>
-                </div>
-               
-</div>
-    </section>
-    
-   
-    
-    
-    
-</body>
-<script src="js/jquery.min.js"></script>
-<script src="js/tether.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/navbar-fixed.js"></script>
 
+<div class="bgimg">
+  <div class="topleft">
+    <p><img src="img/top.png" width="50px" ></p>
+  </div>
+  <div class="middle">
+    <h1><img src="img/logo.png" width="50%" height="40%"  ></h1>
+    <hr>
+    <p id="demo" style="font-size:30px"></p>
+  </div>
+  <div class="bottomleft">
+    Comming soon <img src="img/android.gif">
+  </div>
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Aug 23, 2018 15:37:25").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (2000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+</body>
 </html>
