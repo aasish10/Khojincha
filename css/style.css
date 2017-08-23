@@ -9,7 +9,11 @@ html {
     background-repeat: no-repeat;
     /*background-size: cover;*/
 }
-section{
-    margin-top:10%;
-    display: inline;
+.ul.nav.justify-content{
+    width:20%;
+
+}
+ul.nav.justify-content-end {
+    margin-top: -35px;
+   
 }
